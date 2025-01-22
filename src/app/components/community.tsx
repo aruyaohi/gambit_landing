@@ -37,20 +37,20 @@ const handleScroll = () => {
       >
         <div className="lg:py-20 py-10 lg:max-w-5xl mx-auto bg-[#181818e9] rounded-md flex flex-col gap-4">
           <div className="flex justify-center gap-2">
-            <h3 className="text-xl font-bold font-raleway tracking-widest">COMMUNITY</h3>
+            <h3 className="text-xl font-bold font-raleway tracking-widest">Contact us</h3>
           </div>
           <div className="flex justify-center items-center lg:py-5 lg:px-10 md:px-20">
             <p className="text-white text-sm font-raleway px-10 text-center">
               Questions? Comments? Feedback? We are interested! <br className="hidden lg:flex" />
-              Be part of the Xavinche journey. We are looking forward to it!
+              Be part of the AIRPLUG Family now!!!
             </p>
           </div>
           <div className="flex justify-center items-center">
             <a
               href="#"
-              className="py-3 px-6 rounded-md bg-black text-white text-sm flex gap-2 items-center justify-between font-raleway hover:text-[#09FF22]"
+              className="py-3 px-6 rounded-md bg-black text-white text-sm flex gap-2 items-center justify-between font-raleway hover:text-[#2c76d1]"
             >
-             <FaTelegram/> Join our Telegram Community
+             <FaTelegram/> Message via Telegram
             </a>
           </div>
         </div>
