@@ -19,7 +19,7 @@ export default function Hero() {
                    Games
                    </span>
                    <br/>
-                   <span className='text-3xl'>Earn in crypto and control the outcome to maximize your rewards. Participate now and win big!
+                   <span className='text-2xl'>Earn in crypto and control the outcome to maximize your rewards. Participate now and win big!
                    </span>
                 </h1>
                 <div className='flex justify-center items-center pt-6'>
