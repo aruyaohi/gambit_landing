@@ -47,21 +47,18 @@ export default function ConnectWallet() {
             alt="Centered Illustration"
             width={150}
             height={150}
-            className="h-64 w-auto object-contain shadow-lg rounded-md"
+            className="h-64 w-auto object-contain rounded-md"
           />
 
           {/* Heading */}
           <div>
             <h1
-              className="text-3xl lg:text-4xl font-semibold px-6 text-center text-white"
+              className="text-2xl lg:text-4xl font-semibold px-6 text-center text-gray-900"
               style={{
                 animation: "fadeIn 1.2s ease-in-out",
               }}
             >
               Connect Your{" "}
-              <span className="text-[#2c76d1] underline decoration-dotted">
-                Solana
-              </span>{" "}
               Wallet to Continue
             </h1>
           </div>
@@ -69,7 +66,7 @@ export default function ConnectWallet() {
 
         {/* Connect Wallet Button */}
         <div className="py-10 flex justify-center">
-          <button onClick={() => open()} className="py-4 px-16 lg:px-20 font-semibold border border-white rounded-lg text-white hover:bg-[#2c76d1] hover:text-white hover:shadow-md hover:border-[#2c76d1] transition-all duration-300">
+          <button onClick={() => open()} className="py-4 px-16 lg:px-20 font-semibold border border-black rounded-lg text-black hover:bg-white hover:text-black hover:shadow-md hover:border-[#2c76d1] transition-all duration-300">
             Connect Wallet
           </button>
         </div>

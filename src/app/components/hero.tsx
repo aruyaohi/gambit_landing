@@ -3,54 +3,52 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function Hero() {
-    return (
-        <section>
-            <div className="lg:max-w-5xl mx-auto lg:min-h-[300px] lg:mt-10 mt-14 md:px-24 lg:px-0 overflow-hidden">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }} // Start slightly lower and transparent
-                    animate={{ opacity: 1, y: 0 }} // End at full opacity and original position
-                    transition={{ duration: 0.5 }} // Duration of the animation
-                >
-                    {/* Logos Section */}
-                    <div className="flex justify-center space-x-8 mb-4">
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/a/a3/MTN_Group_logo.svg"
-                            alt="MTN"
-                            className="h-10"
-                        />
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Airtel_logo_2018.svg/800px-Airtel_logo_2018.svg.png"
-                            alt="Airtel"
-                            className="h-10"
-                        />
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Glo_logo.svg/1024px-Glo_logo.svg.png"
-                            alt="Glo"
-                            className="h-10"
-                        />
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Etisalat_logo_2019.svg/1024px-Etisalat_logo_2019.svg.png"
-                            alt="Etisalat"
-                            className="h-10"
-                        />
-                    </div>
+  return (
+    <section className="relative py-8">
+      <div className="lg:max-w-6xl mx-auto lg:min-h-[400px] lg:mt-10 mt-14 px-6 md:px-24 lg:px-0 overflow-hidden text-gray-900">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+          className="text-center"
+        >
+          {/* Hero Heading */}
+          <h1 className="lg:text-6xl text-4xl font-bold font-raleway leading-tight tracking-tight">
+            Seamlessly Buy Airtime & Data
+            <br />
+            <span className="text-[#2c76d1]">Using Crypto</span>
+          </h1>
 
-                    <h1 className="lg:text-5xl text-3xl text-center lg:px-16 font-bold font-raleway px-2">
-                        <br />
-                        Buy Airtime and Data with crypto
-                        <br />
-                        <span className='text-2xl'>
-                            Purchasing of Airtime and Data made easy!
-                        </span>
-                    </h1>
+          {/* Subtext */}
+          <p className="mt-4 text-lg lg:text-xl text-gray-600">
+            The easiest and most secure way to top up your phone or data plan. 
+            Fast, reliable, and crypto-friendly.
+          </p>
+          <div className="flex justify-center items-center mt-8">
+  <Link
+    href={'/connectwallet'}
+    className="py-4 px-10 lg:px-16 text-lg font-semibold text-white bg-gradient-to-r from-[#2c95d1] via-[#2c76d1] to-purple-300 rounded-lg backdrop-blur-md bg-opacity-70 hover:from-gray-900 hover:via-gray-800 hover:to-gray-900 hover:text-blue-500 hover:border hover:border-blue-500 transition-all duration-300 transform hover:scale-105"
+  >
+   Get Started
+  </Link>
+</div>
 
-                    <div className='flex justify-center items-center pt-6'>
-                        <Link href={'/connectwallet'} className='py-5 px-20 border border-white rounded-lg hover:bg-[#191919] hover:text-[#2c76d1] hover:border-[#2c76d1]'>
-                            $ Purchase
-                        </Link>
-                    </div>
-                </motion.div>
-            </div>
-        </section>
-    );
+        </motion.div>
+
+        {/* Decorative Elements */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
+          className="absolute -top-10 -right-10 w-72 h-72 rounded-full filter blur-3xl"
+        ></motion.div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
+          className="absolute -bottom-10 -left-10 w-80 h-80 rounded-full filter blur-3xl"
+        ></motion.div>
+      </div>
+    </section>
+  );
 }
