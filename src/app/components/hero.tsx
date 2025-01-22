@@ -21,7 +21,7 @@ export default function Hero() {
                 </h1>
                 <div className='flex justify-center items-center pt-6'>
                 <Link href={'#'} className='py-5 px-20 border border-white rounded-lg hover:bg-[#191919] hover:text-[#2c76d1] hover:border-[#2c76d1]'>
-                Buy
+                Purchase
                 </Link>
                 </div>
             </motion.div>

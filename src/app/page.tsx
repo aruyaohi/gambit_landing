@@ -1,5 +1,4 @@
 import Header from "./components/header";
-import CarouselSection from "./components/carousel";
 import Hero from "./components/hero";
 // import SectionTwo from "./components/sectionTwo";
 import Community from "./components/community";
@@ -14,7 +13,6 @@ export default function Home(){
       </div>
       <div className="lg:py-10 flex flex-col gap-10 lg:gap-5">
       <Hero/>
-      <CarouselSection/>
       {/* <SectionTwo/> */}
       <Community/>
       <Footer/>
