@@ -28,37 +28,37 @@ export default function Footer(){
                             width={200}
                             height={200}
                         /> */}
-                        <h1 className="font-bold text-4xl space-x-3">G<span className="text-[#09FF22]">A</span>MBIT</h1>
+                        <h1 className="font-bold text-4xl space-x-3">AIR<span className="text-[#2c76d1]">A</span>PLUG</h1>
                         </div>
                         {/* <div className='lg:mt-[-70px]'>
                             <p className="text-sm font-raleway text-gray-400">Decentralised Social Media and Minting Platform</p>
                         </div> */}
                         <ul className="flex space-x-4 lg:mt-4 lg:py-3 py-7">
-                        <li><a href="#" className="text-gray-100 hover:text-[#09FF22]"><FaXTwitter/></a></li>
-                        <li><a href="#" className="text-gray-100 hover:text-[#09FF22] w-14"><FaDiscord/></a></li>
-                        <li><a href="#" className="text-gray-100 hover:text-[#09FF22]"><FaTelegram/></a></li>
-                        <li><a href="#" className="text-gray-100 hover:text-[#09FF22]"><FaGithub/></a></li>
+                        <li><a href="#" className="text-gray-100 hover:text-[#2c76d1]"><FaXTwitter/></a></li>
+                        <li><a href="#" className="text-gray-100 hover:text-[#2c76d1] w-14"><FaDiscord/></a></li>
+                        <li><a href="#" className="text-gray-100 hover:text-[#2c76d1]"><FaTelegram/></a></li>
+                        <li><a href="#" className="text-gray-100 hover:text-[#2c76d1]"><FaGithub/></a></li>
                         </ul>
                         </div>
                         <div className='lg:flex lg:flex-col items-start font-raleway text-xs font-bold lg:px-5 gap-3 md:w-3/5'>
                         <p className='font-raleway text-sm'>Get Updates</p>
-                        {isSucessful? <p className='text-sm text-[#09FF22] transition-colors delay-100'>Subscription Sucessful! Thank you for subscribing</p>:null}
+                        {isSucessful? <p className='text-sm text-[#2c76d1] transition-colors delay-100'>Subscription Sucessful! Thank you for subscribing</p>:null}
                         <div className="flex space-x-2 mt-5 lg:mt-2">
                         <input
                         type="email"
                         placeholder="Your email"
                         className="text-sm px-3 lg:px-6 py-2 rounded-md w-2/3 bg-[#292929b9]"
                         />
-                        <button onClick={handleSubscription} className="font-light bg-black text-white px-4 py-2 rounded-md hover:text-[#09FF22] text-sm w-1/3">
+                        <button onClick={handleSubscription} className="font-light bg-black text-white px-4 py-2 rounded-md hover:text-[#2c76d1] text-sm w-1/3">
                         submit
                         </button>
                         </div>
                         </div>
                         <div className='flex justify-start lg:justify-center font-raleway text-sm font-normal mt-5 lg:mt-0'>
                             <ul className='lg:flex lg:flex-col space-y-3'>
-                                <li><a href="" className='hover:text-[#09FF22]'>About</a></li>
-                                <li><a href="" className='hover:text-[#09FF22]'>Tokenomics</a></li>
-                                <li><a href="" className='hover:text-[#09FF22]'>Docs</a></li>
+                                <li><a href="" className='hover:text-[#2c76d1]'>About</a></li>
+                                <li><a href="" className='hover:text-[#2c76d1]'>Tokenomics</a></li>
+                                <li><a href="" className='hover:text-[#2c76d1]'>Docs</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,13 +68,13 @@ export default function Footer(){
                     </div>
                     <div className='lg:flex-row lg:justify-between lg:gap-3 flex flex-col gap-2'>
                         <Link href='#'>
-                            <p className='text-sm hover:text-[#09FF22]'>Terms & conditions</p>
+                            <p className='text-sm hover:text-[#2c76d1]'>Terms & conditions</p>
                         </Link>
                         <Link href='#'>
-                            <p className='text-sm hover:text-[#09FF22]'>Privacy Policy</p>
+                            <p className='text-sm hover:text-[#2c76d1]'>Privacy Policy</p>
                         </Link>
                         <Link href='#'>
-                            <p className='text-sm hover:text-[#09FF22]'>FAQs</p>
+                            <p className='text-sm hover:text-[#2c76d1]'>FAQs</p>
                         </Link>
                     </div>
                     </div>

@@ -14,17 +14,14 @@ export default function Hero() {
                 <h1 className="lg:text-5xl text-3xl text-center lg:px-16 font-bold font-raleway px-2">
                   
                     <br/>
-                    Take charge of your winning potential by joining exciting 
-                   <span className='text-[#09FF22] ml-5'>
-                   Games
-                   </span>
+                   Buy Airtime and Data with crypto
                    <br/>
-                   <span className='text-2xl'>Earn in crypto and control the outcome to maximize your rewards. Participate now and win big!
+                   <span className='text-2xl'>Purchasing of Airtime and Data made easy!
                    </span>
                 </h1>
                 <div className='flex justify-center items-center pt-6'>
-                <Link href={'#'} className='py-5 px-20 border border-white rounded-lg hover:bg-[#191919] hover:text-[#09FF22] hover:border-[#09FF22]'>
-                    PLAY
+                <Link href={'#'} className='py-5 px-20 border border-white rounded-lg hover:bg-[#191919] hover:text-[#2c76d1] hover:border-[#2c76d1]'>
+                Buy
                 </Link>
                 </div>
             </motion.div>

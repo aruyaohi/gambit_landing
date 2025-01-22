@@ -4,30 +4,28 @@ import { useState } from 'react';
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className="bg-transparent text-white shadow-lg sticky top-0 z-50">
+    <header className={`transition-all bg-[#1e1e1e] text-white shadow-lg sticky top-0 z-50`}>
       <div className="max-w-screen-xl mx-auto px-6 py-2 flex justify-between items-center">
         {/* Logo */}
         <h1 className="font-semibold text-3xl">
-          <span className="text-[#09FF22]">GAM</span>BIT
+          <span className="text-[#2c76d1]">AIR</span>PLUG
         </h1>
 
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex space-x-8">
-          <a href="#" className="hover:text-[#09FF22] transition-colors">
+          <a href="#" className="hover:text-[#2c76d1] transition-colors">
             About
           </a>
-          <a href="#" className="hover:text-[#09FF22] transition-colors">
+          <a href="#" className="hover:text-[#2c76d1] transition-colors">
             How to play?
           </a>
-          <a href="#" className="hover:text-[#09FF22] transition-colors">
+          <a href="#" className="hover:text-[#2c76d1] transition-colors">
             Resources
           </a>
-          {/* <a href="#" className="hover:text-green-500 transition-colors">
-            Contact
-          </a> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -62,18 +60,18 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       <div
-        className={`lg:hidden bg-transparent text-white space-y-4 p-6 transition-all duration-300 ${
+        className={`lg:hidden bg-[#1e1e1e] text-white space-y-4 p-6 transition-all duration-300 ${
           isMenuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
         }`}
         style={{ overflow: 'hidden' }}
       >
-        <a href="#" className="block hover:text-[#09FF22] transition-colors">
+        <a href="#" className="block hover:text-[#2c76d1] transition-colors">
           About
         </a>
-        <a href="#" className="block hover:text-[#09FF22] transition-colors">
+        <a href="#" className="block hover:text-[#2c76d1] transition-colors">
           How to Play?
         </a>
-        <a href="#" className="block hover:text-[#09FF22] transition-colors">
+        <a href="#" className="block hover:text-[#2c76d1] transition-colors">
           Resources
         </a>
       </div>

@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 
 export default function SectionTwo() {
   const [isInView, setIsInView] = useState(false);
@@ -44,23 +43,17 @@ export default function SectionTwo() {
       transition={{ duration: 1 }}
     >
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#09FF22] to-transparent via-transparent opacity-30"></div>
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#2c76d1] to-transparent via-transparent opacity-30"></div>
 
       <div className="lg:min-h-[400px] w-full lg:flex lg:p-20 p-10 transition-transform duration-300 ease-in-out hover:scale-105 border border-[#cccccc39] rounded-md relative z-10">
         <div className="lg:flex lg:flex-col gap-5 lg:w-1/2 justify-center">
-          <h2 className="text-3xl text-white">Taking Content Creation to the next Level</h2>
+          <h2 className="text-3xl text-white">Support for multiple Networks</h2>
           <p className="text-gray-300 text-sm">
           In this digital age, Content creators and influencers have become the new trendsetters. By leveraging platforms that allow them to monetize their creativity, they have the power to transform their ideas into income.
           </p>
         </div>
         <div className="lg:w-1/2">
           {/* Additional Content Here */}
-          <Image
-            src="/images/pawn.png"
-            alt="img"
-            width={200}
-            height={200}
-          />
         </div>
       </div>
 

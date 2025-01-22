@@ -6,19 +6,14 @@ import { motion } from 'framer-motion'; // For additional animations
 export default function CarouselSection() {
     const contents = [
         {
-            image: "/images/stake (2).png",
-            title: "STAKE",
+            image: "/images/airtime.png",
+            title: "Multi Network Support",
             description: "User generated content is referred to as NeXa - which is derived from NFT.",
         },
         {
             image: "/images/chess.png",
-            title: "PLAY",
+            title: "FAST & CHEAP",
             description: "Users are able to create unique profiles showcasing their identity, interests, and/or expertise. Users can also customize their experience through preferences, settings, or feeds around their specific niche.",
-        },
-        {
-            image: "/images/dice.png",
-            title: "WIN",
-            description: "Users engage with each other's content through likes, comments, shares, or reactions.",
         },  
     ];
 
@@ -109,8 +104,8 @@ export default function CarouselSection() {
                         <label 
                             htmlFor={`content-${index}`} 
                             className={`cursor-pointer flex items-center justify-center w-6 h-6 rounded-full transition-all duration-300 
-                                ${selectedContentIndex === index ? 'bg-[#09FF22] scale-125' : 'bg-gray-400 scale-50'} 
-                                border-2 ${selectedContentIndex === index ? 'border-[#09FF22]' : 'border-gray-400'} 
+                                ${selectedContentIndex === index ? 'bg-[#2c76d1] scale-125' : 'bg-gray-400 scale-50'} 
+                                border-2 ${selectedContentIndex === index ? 'border-[#2c76d1]' : 'border-gray-400'} 
                                 transform`}
                         ></label>
                     </motion.div>
