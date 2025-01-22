@@ -35,6 +35,7 @@ const metadata = {
 export default function ConnectWallet() {
 
     const {open} = useAppKit();
+
   return (
     <>
       <div className="overflow-hidden min-h-screen flex flex-col bg-transparent">
