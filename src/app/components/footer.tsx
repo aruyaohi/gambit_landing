@@ -2,7 +2,6 @@
 import Link from 'next/link'
 import { useState } from 'react'
 import {FaDiscord,FaXTwitter,FaGithub, FaTelegram} from 'react-icons/fa6'
-import Image from 'next/image'
 
 export default function Footer(){
 
