@@ -28,7 +28,7 @@ export default function Footer() {
                         <div className='lg:flex lg:flex-col items-start font-raleway text-xs font-semibold lg:px-5 gap-3 md:w-3/5'>
                             <p className='font-raleway text-sm text-gray-800'>Get Updates</p>
                             {isSucessful ? <p className='text-sm text-[#2c76d1] transition-colors delay-100'>Subscription Successful! Thank you for subscribing</p> : null}
-                            <div className="flex space-x-2 mt-5 lg:mt-2">
+                            <div className="flex space-x-2 mt-5 lg:mt-2 border">
                                 <input
                                     type="email"
                                     placeholder="Your email"
